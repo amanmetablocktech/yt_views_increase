@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Layout } from '../components/ui/Layout';
 import { Card } from '../components/ui/Card';
-import { planAPI, orderAPI, proxyAPI } from '../services/api';
+import { orderAPI, proxyAPI } from '../services/api';
 import { Users, ShoppingBag, DollarSign, Globe } from 'lucide-react';
 
 export const Admin: React.FC = () => {

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Layout } from '../components/ui/Layout';
 import { Card } from '../components/ui/Card';
-import { Button } from '../components/ui/Button';
+// import { Button } from '../components/ui/Button';
 import { Badge } from '../components/ui/Badge';
 import { videoAPI, orderAPI } from '../services/api';
-import { useAuth } from '../context/AuthContext';
+// import { useAuth } from '../context/AuthContext';
 import { Trash2, ExternalLink, TrendingUp, Eye, ThumbsUp } from 'lucide-react';
 
 interface Video {
@@ -22,7 +22,7 @@ export const MyVideos: React.FC = () => {
     const [videos, setVideos] = useState<Video[]>([]);
     const [orders, setOrders] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
-    const { user } = useAuth();
+    // const { user } = useAuth();
 
     useEffect(() => {
         fetchData();
